@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <style>
+        body {
+            
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: white;
+        }
+        
+        header {
+            background-color:black;
+            color:white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .contact {
+            margin-bottom: 20px;
+        }
+       
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Information</h1>
+    </header>
+
+    <br>
+    <br>
+
+<fieldset>
+    <legend><h2>Details</h2></legend>
+    <div class="contact" id="contact1"></div>
+  
+    <script>
+    
+        var contacts = [
+            { name: "Sinchana", phone: "555-5678", email: "sinchana12@gmail.com" , linkedln:"https://www.linkedin.com/in/sinchana-j-9286892a5/", github:"12SINCHANA",
+        }
+        ];
+        function displayContact(contact, elementId) {
+            var contactDiv = document.getElementById(elementId);
+            var contactInfo = `
+                <h2>${contact.name}</h2>
+                <p>Phone: ${contact.phone}</p>
+                <p>Email: ${contact.email}</p>
+                <p>linkedln: ${contact.linkedln}</p>
+                <p>Github: ${contact.github}</p>
+                
+            `;
+            contactDiv.innerHTML = contactInfo;
+        }
+
+        displayContact(contacts[0], 'contact1');
+        
+    </script>
+    </fieldset>
+    <br><br>
+    <fieldset>
+      <legend><h2>Social media</h2></legend>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a><br><br>
+        <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a><br><br>
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a><br><br>
+    </fieldset>
+
+</body>
+</html>
