@@ -200,18 +200,14 @@ section h2 {
 </div>
 
     <script>
-        // Get the navigation bar element
         var navBar = document.querySelector('nav');
-      
-        // Add an event listener for mouseover
-        navBar.addEventListener('mouseover', function() {
-          // Change the background color on mouseover
+        
+        navBar.addEventListener('mouseover', function() {         
           navBar.style.backgroundColor = '#333';
         });
       
-        // Add an event listener for mouseout
+
         navBar.addEventListener('mouseout', function() {
-          // Restore the original background color on mouseout
           navBar.style.backgroundColor = 'hsla(18, 88%, 10%, 0.299)';
         });
       </script>
@@ -220,18 +216,12 @@ section h2 {
 <script>
     document.addEventListener('DOMContentLoaded', function () {
       var firstPackageImg = document.querySelector('.package:first-child img');
-      firstPackageImg.src = 'URL_TO_YOUR_IMAGE'; // Replace with the actual image URL
+      firstPackageImg.src = 'URL_TO_YOUR_IMAGE'; 
     });
   </script>
-  
-
 </body>
-
-
 <br><br><br>
-
 <footer>
-
     <script>
         var currentYear = new Date().getFullYear();
         document.querySelector('footer').innerHTML += ' &copy; ' + currentYear;
@@ -243,6 +233,4 @@ section h2 {
   <a href="https://www.facebook.com/" target="_blank">Facebook</a>
   <a href="https://www.linkedin.com/in/sinchana-j-9286892a5/" target="_blank">linkedln</a>
 </footer>
-
-
 </html>
